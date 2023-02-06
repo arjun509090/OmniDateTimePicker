@@ -16,6 +16,8 @@ class OmniDateTimePicker extends StatefulWidget {
   ///
   /// Default value: DateTime.now().subtract(const Duration(days: 3652))
   final DateTime? startFirstDate;
+  
+  final SelectableDayPredicate selectableDayPredicate;
 
   /// Maximum date that can be selected
   ///
@@ -57,6 +59,7 @@ class OmniDateTimePicker extends StatefulWidget {
     this.timeSpinnerHighlightedTextStyle,
     this.borderRadius,
     this.minutesInterval,
+    this.selectableDayPredicate,
   }) : super(key: key);
 
   @override
